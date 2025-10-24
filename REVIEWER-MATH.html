@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title> REGULAR MATH </title>
+    <style>
+        body {
+            background-image: url('redstars.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .center-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .center-container img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+        }
+        .caption {
+            background-color: red;
+            color: white;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+            position: relative;
+            margin-left: 0.5rem;
+        }
+        .caption::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-right: 20px solid red;
+        }
+
+        /* Consolidated big-button styles (unchanged appearance/size) */
+        .big-button {
+          background: #8B0000; /* Blood red */
+          color: white;
+          border: 2px solid white;
+          border-radius: 20px;
+          font-size: 2.5rem;
+          padding: 2rem 3rem;
+          font-weight: bold;
+          cursor: pointer;
+          box-shadow: 0 0 10px white, 0 0 20px white;
+          transition: opacity 0.7s, visibility 0.7s, box-shadow 0.3s;
+        }
+        .big-button:hover {
+          background: #600000;
+          box-shadow: 0 0 15px white, 0 0 30px white;
+        }
+        .big-button.fade {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        #a3 {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2.5rem;
+        }
+
+        .my-button {
+          background: #8B0000; /* Blood red */
+          color: white;
+          border: 2px solid white;
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 20px;
+          margin-left: 20px;
+          box-shadow: 0 0 10px white, 0 0 20px white; /* White glow */
+          transition: background 0.3s, box-shadow 0.3s;
+        }
+
+        .my-button:hover {
+          background: #600000; /* Darker blood red on hover */
+          box-shadow: 0 0 15px white, 0 0 30px white;
+        }
+
+        /* The container that holds the big button — centers its contents */
+        .center-screen {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: transparent;
+        }
+
+        .marquee.top { top: 8px; height: 70px; }
+        .marquee.bottom { bottom: 8px; height: 210px; align-items: flex-end; }
+
+        .marquee .track {
+          display: inline-block;
+          white-space: nowrap;
+          animation: scroll-left 12s linear infinite;
+        }
+
+        .marquee.right .track { animation: scroll-right 12s linear infinite; }
+
+        .marquee img { height: 100%; display: inline-block; margin: 0 12px; vertical-align: middle; }
+
+        @keyframes scroll-left {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(-50%); }
+        }
+        @keyframes scroll-right {
+          0% { transform: translateX(0%); }
+          100% { transform: translateX(50%); }
+        }
+    </style>
+</head>
+<body text="red">
+    <div class="center-screen" id="buttonContainer">
+        <button id="mainButton" class="big-button" onclick="fadeAndShow()">MATH REVIEWER</button>
+    </div>
+    <div id="a3">
+      <div class="marquee top right">
+        <div class="track" aria-hidden="true">
+          <img src="pop-cat.gif" alt="pop cat" />
+          <img src="pop-cat.gif" alt="pop cat" />
+          <img src="pop-cat.gif" alt="pop cat" />
+        </div>
+      </div>
+
+      math reviewerヾ(≧▽≦*)o by:KYLEEN L. SIOCO 8-EVANS TLE
+      <div class="center-container">
+        <img src="bed.jpg" alt="Photo">
+        <span class="caption"> me when math:(</span>
+
+        <button class="my-button" onclick="window.location.href='EXERCISE 2.html'">Exercise 2</button>
+        <button class="my-button" onclick="window.location.href='lesson 1.html'">Lesson 1</button>
+        <button class="my-button" onclick="window.location.href='lesson 2.html'">Lesson 2</button>
+        <button class="my-button" onclick="window.location.href='lesson 3.html'">Lesson 3</button>
+        <button class="my-button" onclick="window.location.href='lesson 4.html'">Lesson 4</button>
+        <button class="my-button" onclick="window.location.href='lesson 5.html'">Lesson 5</button>
+      </div>
+    </div>
+
+    <script>
+        function fadeAndShow() {
+            var btn = document.getElementById('mainButton');
+            btn.classList.add('fade');
+            setTimeout(function() {
+                document.getElementById('buttonContainer').style.display = 'none';
+                document.getElementById('a3').style.display = 'block';
+            }, 700);
+        }
+    </script>
+</body>
+</html>
