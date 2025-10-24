@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>REVIEWER: WEB PAGE</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive;
+      background-color: #000;
+      color: white;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .caption {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #ff69b4;
+      z-index: 2;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 120px 20px 50px;
+      text-align: center;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 50px;
+    }
+
+    .card {
+      text-align: center;
+    }
+
+    .card .name {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #FFB6C1;
+    }
+
+    .card .link {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #ffccff;
+    }
+
+    .card .subject {
+      margin-top: 10px;
+      font-size: 1em;
+      color: #FFA07A;
+    }
+
+  .play-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ff69b4;
+  cursor: pointer;
+}
+
+    .card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+    }
+
+    /* Unique hex border colors for each card */
+    .card:nth-child(1) img { border: 5px solid #954CE0; /* REESE */ }
+    .card:nth-child(2) img { border: 5px solid #DDA0DD; /* RYLEE */ }
+    .card:nth-child(3) img { border: 5px solid #6BCB77; /* MARRESHA */ }
+    .card:nth-child(4) img { border: 5px solid #4D96FF; /* KEISHA */ }
+    .card:nth-child(5) img { border: 5px solid #C74BFF; /* AKISHA */ }
+    .card:nth-child(6) img { border: 5px solid #3F70CC; /* JAIMEE */ }
+    .card:nth-child(7) img { border: 5px solid #3F70CC; /* JASMINE */ }
+    .card:nth-child(8) img { border: 5px solid #D10000; /* KYLEEN */ }
+    .card:nth-child(9) img { border: 5px solid #708090; /* CASSIEL */ }
+    .card:nth-child(10) img { border: 5px solid #000000; /* SIMON */ }
+  </style>
+</head>
+<body>
+   <audio autoplay loop>
+    <source src="beabadobee.mp3" type="audio/mpeg">
+  </audio>
+
+  <video autoplay muted loop id="bg-video">
+    <source src="minecraft.mp4" type="video/mp4">
+  </video>
+
+  <div class="caption">REVIEWER</div>
+
+  <div class="content">
+  <button onclick="document.getElementById('bg-music').play()" style="margin-bottom: 20px; padding: 10px 20px; font-size: 1em; background-color: #ff69b4; color: white; border: none; border-radius: 10px; box-shadow: 0 0 10px #ff69b4; cursor: pointer;">
+    ౨ৎ ˖ ࣪⊹ •❤️CLICK FOR MUSIC❤️•⊹₊ ⋆୨ৎ
+  </button>
+
+  <audio id="bg-music" loop>
+    <source src="beabadobee.mp3" type="audio/mpeg">
+  </audio>
+
+  <p>౨ৎ ˖ ࣪⊹ •🍓•⊹₊ ⋆୨ৎClick the provided links below౨ৎ ˖ ࣪⊹ •🍓•⊹₊ ⋆୨ৎ</p>
+
+    <div class="gallery">
+      <div class="card">
+        <div class="name">QUINTO, Lana Reese F.</div>
+        <img src="Students/QUINTO.jpg" alt="Quinto">
+        <div class="subject">RESEARCH</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">LLORCA, Rylee Deandre C.</div>
+        <img src="Students/LLORCA.jpg" alt="Quinto">
+        <div class="subject">TECHNOLOGY AND LIVELIHOOD EDUCATION</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">OLARVE, Marresha Rei B.</div>
+        <img src="pusasmile.jpg" alt="Quinto">
+        <div class="subject">FILIPINO</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">PESTILOS, Keisha Mae D.R.</div>
+        <img src="pusasmile.jpg" alt="Quinto">
+        <div class="subject">SCIENCE</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">RICAFRANCA, Akisha A.</div>
+        <img src="pusasmile.jpg" alt="Quinto">
+        <div class="subject">BIOTECHNOLOGY</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">ROJO, Jaimee Persephone B.</div>
+        <img src="Students/ROJO.jpg" alt="Quinto">
+        <div class="subject">ELECTIVE MATHEMATICS</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">SALINAS, Jasmine Athaliah P.</div>
+        <img src="Students/SALINAS.jpg" alt="Quinto">
+        <div class="subject">MUSIC, ARTS, P.E, AND HEALTH</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+  <div class="name">SIOCO, Kyleen L.</div>
+  <img src="Students/SIOCO1.jpg" alt="Quinto">
+  <div class="subject">MATHEMATICS</div>
+  <div class="link">
+    <a href="REVIEWER-MATH.html" target="_blank" style="color: #ffccff;">click this to open reviewer(～￣▽￣)～</a>
+  </div>
+</div>
+
+      <div class="card">
+        <div class="name">TABIOS, Cassiel L.</div>
+        <img src="Students/TABIOS.jpg" alt="Quinto">
+        <div class="subject">ARALING PANLIPUNAN</div>
+        <div class="link">link</div>
+      </div>
+
+      <div class="card">
+        <div class="name">VILLABLANCA, Simon James A.</div>
+        <img src="Students/VILLABLANCA.jpg" alt="Quinto">
+        <div class="subject">ENGLISH</div>
+        <div class="link">link</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
